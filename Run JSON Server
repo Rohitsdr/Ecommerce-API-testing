@@ -1,0 +1,2 @@
+npm install -g json-server
+npx json-server -"C:\Users\rohit\OneDrive\Desktop\E-order\db.json"
