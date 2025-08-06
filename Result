@@ -1,0 +1,23 @@
+ Result
+---
+
+## 🟢 Final Step: 
+
+```bash
+git init
+git add .
+git commit -m "Initial commit: E-Commerce API testing with Postman"
+git branch -M main
+git remote add origin https://github.com/ecommerce-api-testing.git
+git push -u origin main
+
+✅ Result
+You will have a complete professional Postman testing project, hosted on GitHub, including:
+
+API test collection
+
+Mock data
+
+Scripts for validation
+
+Readable documentation
