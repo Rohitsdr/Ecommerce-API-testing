@@ -1,0 +1,54 @@
+1. GET /products
+✅ Check all available products
+➡️ Test status 200
+
+2. POST /orders
+✅ Place new order
+Body (JSON):
+
+json
+Copy
+Edit
+{
+  "productId": 2,
+  "quantity": 3,
+  "status": "placed"
+}
+➡️ Test response has correct fields
+
+3. PATCH /orders/1
+✅ Update order status
+Body:
+
+json
+Copy
+Edit
+{
+  "status": "shipped"
+}
+➡️ Test status updated to shipped
+
+4. DELETE /orders/1
+✅ Delete order
+➡️ Status 200 + response empty
+
+🧪 Step 4: Add Postman Test Scripts
+Example for GET /products:
+
+js
+Copy
+Edit
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Response has array of products", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.length).to.be.above(0);
+});
+➡️ Add test scripts to all requests.
+
+📤 Step 5: Export Postman Collection
+Click on Collection Name → 3 Dots → Export
+
+Save as: postman_collection.json
