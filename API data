@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Laptop", "price": 50000 },
+    { "id": 2, "name": "Smartphone", "price": 20000 }
+  ],
+  "orders": [
+    { "id": 1, "productId": 1, "quantity": 1, "status": "placed" }
+  ]
+}
